@@ -77,7 +77,7 @@ export default function handler(req, res) {
       "Srita. Alma: Mira, Anita. Cuando vivía tu papá él venía a platicar conmigo porque sabía que iba a morir, y él quería que yo te cuidara.",
       "Srita. Alma: Mira. Anita. En la Biblia tú puedes aprender cómo Dios creó el Universo y al sexto día creó al ser humano del polvo de la Tierra; y dice la Biblia que Dios creó al hombre y a la mujer. Entonces, si tú crees en el Hijo de Dios, que se llama Jesús, y le pides que entre en tu corazón y obedeces su palabra (que es la Biblia) tú puedes ser hija de Dios. Aunque no tengas papá ni mamá, Dios puede ser tu Padre. Dios te hizo especial, Anita. Eres una obra de arte creada por Dios, Anita.",
       "Juanito: ¿Y yo, señorita Alma?",
-      "Srita. Alma: Sí, Juanito. Tú también. Ábrele tu corazón a Jesús y también serás hijo de Dios.  Así como tú, todos los niños que están en este lugar pueden orar y decirle a Dios que quieren ser sus hijos.",
+      "Srita. Alma: Sí, Juanito. Tú también. Ábrele tu corazón a Jesús y también serás hijo de Dios. Así como tú, todos los niños que están en este lugar pueden orar y decirle a Dios que quieren ser sus hijos.",
       "EMPIEZA LA CANCIÓN: “HECHO A MANO”"
     ],
   });

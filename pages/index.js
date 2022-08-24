@@ -87,7 +87,8 @@ export default function Home({ shuffledData, rawData }) {
 export async function getServerSideProps(context) {
   const port = process.env.PORT || 3000;
   const response = await axios.get(`https://memoriza-guion-hecho-a-mano-obra.vercel.app/api/sentences`);
-  const rawData = Object.values(response)[0];
+  const rawData = Object.values(response.data)[0];
+  console.log(rawData);
   const dataToShuffle = rawData.slice();
   // console.log(dataToShuffle);
   const shuffledData = dataToShuffle.sort((a, b) => {

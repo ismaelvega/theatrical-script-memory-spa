@@ -1,0 +1,42 @@
+// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
+export default function handler(req, res) {
+  res.status(200).json({
+    leo: [
+      "Juanito: ¡Escucha, Anita. Ahí viene Don Peter!. ¡Vámonos!",
+      "(Corren y salen)",
+      "(Entra Don Peter con una maceta. La pone en el suelo y se pone a trabajar en la mesa)",
+      "(Tocan la puerta. Don Peter abre)",
+      "Don Peter: ¡Qué bueno que ya llegó el barro!",
+      "(Entran los muchachos con costales)",
+      "Don Peter: Pónganlos en el piso, muchachos",
+      "(Anita entra detrás de ellos con un costal)",
+      "Don Peter: ¡Anita! ¡La que vende periódico! ¿Qué haces?",
+      "Anita: Me ofrecí a ayudar. A ver si me da propinita",
+      "Don Peter: Claro que sí, Anita. Y… ¿Ya sabes qué trae el costal?",
+      "Anita: No, no sé.",
+      "Don Peter: Bueno, ábrelo para que lo cheques",
+      "(Anita pone el costal en el suelo. Enseguida lo abre y toca la tierra)",
+      "Anita: ¡Está frío!",
+      "Don Peter: Así es. Mira, nosotros somos como el barro. Dios formó al hombre del polvo de la Tierra y sopló en Él aliento de vida; y por eso vive el hombre. Escucha esta canción, Anita",
+      "EMPIEZA LA CANCIÓN: “ESO ES ASOMBROSO”",
+      "(Al terminar la canción Don Peter da las gracias a los muchachos que trajeron el barro)",
+      "Don Peter: Muchas gracias, muchachos. Ya con lo que me trajeron podré terminar mis pedidos",
+      "(Toca a la puerta la Srita. Alma)",
+      "(Don Peter la invita a pasar y la Srita. Alma se dirige a Anita)",
+      "Srita. Alma: Hola, Anita. Soy la directora de la Casa Hogar. ¿Me recuerdas?",
+      "Anita: Sí, sí la recuerdo.",
+      "Srita. Alma: ¿Qué estás haciendo aquí? ¿Aquí trabajas?",
+      "Anita: No, yo vendo periódicos en las calles y el que me sobra se lo traigo a Don Peter para envolver sus trabajos de barro.",
+      "Anita (preguntándole a Don Peter): ¿A qué hora empezamos la clase, Don Peter?",
+      "Srita. Alma: ¿Cuál clase, Don Peter?",
+      "Don Peter: Ah. Es que le enseño a Anita a hacer macetas de barro.",
+      "Srita. Alma (dirigiéndose a Anita): ¡Uy, qué padre! Ya después puedes poner tu propio negocio de macetas",
+      "Anita (preguntándole a Don Peter): ¿Usted cree Don Peter que algún día yo pueda tener mi propia tienda?",
+      "Don Peter: Bueno, Anita. ¿Eres paciente?",
+      "Anita: ¡Sí!",
+      "Don Peter: Debes buscar un buen barro y amasar muy bien hasta que la maceta te salga muy bien. Entonces podrás vender muchas macetas.",
+      "Srita. Alma: Oye, Anita. Estoy pensando que muy pronto vendrá el invierno y sería bueno que tú y Juanito regresaran a la Casa Hogar.",
+    ],
+  });
+}

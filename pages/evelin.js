@@ -55,7 +55,9 @@ export default function Evelin({ shuffledData, rawData }) {
                       } else {
                         console.log("o");
                         document.body.classList.add("error");
+                        checkbox.textContent = rawData.indexOf(checkedSentence) + 1;
                         setTimeout(() => {
+                          checkbox.textContent = ''
                           document.body.classList.remove("error");
                         }, 50);
                       }

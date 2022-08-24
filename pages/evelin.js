@@ -66,7 +66,7 @@ export default function Evelin({ shuffledData, rawData }) {
 
 export async function getServerSideProps(context) {
   const port = process.env.PORT || 3000;
-  const response = await fetch(`http://localhost:${port}/api/evelin`);
+  const response = await fetch(`https://memoriza-guion-hecho-a-mano-obra.vercel.app/api/evelin`);
   const data = await response.json();
   const rawData = Object.values(data)[0];
   const dataToShuffle = rawData.slice();

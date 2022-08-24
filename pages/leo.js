@@ -66,7 +66,8 @@ export default function Leo({ shuffledData, rawData }) {
 }
 
 export async function getServerSideProps(context) {
-  const response = await fetch("http://localhost:3000/api/leo");
+  const port = process.env.PORT || 3000;
+  const response = await fetch(`http://localhost:${port}/api/leo`);
   const data = await response.json();
   const rawData = Object.values(data)[0];
   const dataToShuffle = rawData.slice();

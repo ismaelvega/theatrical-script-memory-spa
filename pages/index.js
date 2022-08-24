@@ -84,7 +84,8 @@ export default function Home({ shuffledData, rawData }) {
 }
 
 export async function getServerSideProps(context) {
-  const response = await fetch("http://localhost:3000/api/sentences");
+  const port = process.env.PORT || 3000;
+  const response = await fetch(`http://localhost:${port}/api/sentences`);
   const data = await response.json();
   const rawData = Object.values(data)[0];
   const dataToShuffle = rawData.slice();

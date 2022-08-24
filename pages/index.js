@@ -70,7 +70,7 @@ export default function Home({ shuffledData, rawData }) {
                         setTimeout(() => {
                           checkbox.textContent = ''
                           document.body.classList.remove("error");
-                        }, 50);
+                        }, 110);
                       }
                     }
                   }}

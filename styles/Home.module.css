@@ -7,7 +7,7 @@
   font-size: 30px;
   margin: 10px 0;
   padding: 3vh;
-  background-color: rgba(255, 255, 255, 0.198);
+  background-color: rgba(115, 111, 111, 0.198);
   /* border: 1px solid red; */
 }
 
@@ -20,8 +20,9 @@
   min-width: 50px;
   min-height: 50px;
   max-width: 600px;
+  color: black;
   /* max-height: 100px; */
-  border: 3px solid white;
+  border: 3px solid rgb(0, 0, 0);
   margin-right: 4vw;
 }
 
@@ -39,9 +40,11 @@
   z-index: 2;
  
   font-size: 1.6rem;
-  background-color: rgb(255 255 255 / 95%);
+
+  background-color: rgb(0 0 0 / 95%);
+    color: white;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+
   border-radius: 5px;
   cursor: pointer;
 

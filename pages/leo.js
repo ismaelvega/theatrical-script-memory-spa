@@ -60,7 +60,7 @@ export default function Leo({ shuffledData, rawData }) {
                         setTimeout(() => {
                           checkbox.textContent = ''
                           document.body.classList.remove("error");
-                        }, 50);
+                        }, 110);
                       }
                     }
                   }}

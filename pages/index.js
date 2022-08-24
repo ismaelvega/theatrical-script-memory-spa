@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from 'next/router'
+import axios from 'axios'
 
 export default function Home({ shuffledData, rawData }) {
   const router = useRouter()
@@ -85,9 +86,8 @@ export default function Home({ shuffledData, rawData }) {
 
 export async function getServerSideProps(context) {
   const port = process.env.PORT || 3000;
-  const response = await fetch(`http://localhost:${port}/api/sentences`);
-  const data = await response.json();
-  const rawData = Object.values(data)[0];
+  const response = await axios.get(`http://localhost:${port}/api/sentences`);
+  const rawData = Object.values(response)[0];
   const dataToShuffle = rawData.slice();
   // console.log(dataToShuffle);
   const shuffledData = dataToShuffle.sort((a, b) => {

@@ -83,7 +83,7 @@ export default function Home({ shuffledData, rawData }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const port = process.env.PORT || 3000;
   const response = await fetch(`http://localhost:${port}/api/sentences`);
   const data = await response.json();

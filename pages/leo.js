@@ -7,10 +7,19 @@ export default function Leo({ shuffledData, rawData }) {
   let [number, setNumber] = useState(1);
 
   function restart() {
-    Object.values(document.querySelectorAll("#checkbox")).forEach(
-      (checkbox) => (checkbox.textContent = "")
-    );
-    setNumber(1);
+    if(number === 1){
+      return
+    } else {
+      const userInteraction = window.confirm("¿Quieres reiniciar?")
+      if(userInteraction){
+        Object.values(
+          document.querySelectorAll("#checkbox")
+        ).forEach((checkbox) => (checkbox.textContent = ""));
+        setNumber(1);
+      } else {
+        return
+      }
+    }
   }
 
   return (

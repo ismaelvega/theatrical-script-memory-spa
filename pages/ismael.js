@@ -7,10 +7,19 @@ export default function Ismael({ shuffledData, rawData }) {
   let [number, setNumber] = useState(1);
 
   function restart() {
-    Object.values(document.querySelectorAll("#checkbox")).forEach(
-      (checkbox) => (checkbox.textContent = "")
-    );
-    setNumber(1);
+    if(number === 1){
+      return
+    } else {
+      const userInteraction = window.confirm("¿Quieres reiniciar?")
+      if(userInteraction){
+        Object.values(
+          document.querySelectorAll("#checkbox")
+        ).forEach((checkbox) => (checkbox.textContent = ""));
+        setNumber(1);
+      } else {
+        return
+      }
+    }
   }
 
   return (
@@ -46,7 +55,9 @@ export default function Ismael({ shuffledData, rawData }) {
                       } else {
                         console.log("o");
                         document.body.classList.add("error");
+                        checkbox.textContent = rawData.indexOf(checkedSentence) + 1;
                         setTimeout(() => {
+                          checkbox.textContent = ''
                           document.body.classList.remove("error");
                         }, 50);
                       }
